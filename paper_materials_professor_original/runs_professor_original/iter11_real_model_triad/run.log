@@ -1,0 +1,65 @@
+loaded 80 iter10 samples (with CodeLlama generations)
+mapped diffs for 80 (lang, diff_id) pairs
+[qwen2.5-coder-7b] loading /home/selab/2026/20230088-양근석/Research/LLM_Models/Qwen/2.5/7B-Instruct in fp16 ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.82s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.57s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.76s/it]
+[qwen2.5-coder-7b]   loaded in 5.1s
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[qwen2.5-coder-7b]   gen 20/80: [cs] Update DES core to use int arrays and optimize permutation function.
+[qwen2.5-coder-7b]   gen 40/80: [java] Rename `metricsRollingPercentileWindow` to `metricsRollingPercentileWindowInMill
+[qwen2.5-coder-7b]   gen 60/80: [php] Add workaround for theme fetching across OSes and update comments.
+[qwen2.5-coder-7b]   gen 80/80: [rust] Update API server configuration and error handling for metrics collection.
+[qwen2.5-coder-7b] wrote /home/selab/2026/20230088-양근석/Research/CMG/IST/runs/iter11_real_model_triad/generations_qwen2.5-coder-7b.jsonl
+[deepseek-6.7b] loading /home/selab/2026/20230088-양근석/Research/LLM_Models/DeepSeek/6.7B-Instruct in fp16 ...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.29s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.26it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.15it/s]
+[deepseek-6.7b]   loaded in 1.8s
+[deepseek-6.7b]   gen 20/80: [cs] "Update DESCore class to use int arrays"
+[deepseek-6.7b]   gen 40/80: [java] "Update HystrixCommandProperties: Add metricsRollingPercentileWindowInMillisecon
+[deepseek-6.7b]   gen 60/80: [php] "Fixes theme fetching issue on Windows"
+[deepseek-6.7b]   gen 80/80: [rust] "Update api_server.rs: Use Cow for error handling"
+[deepseek-6.7b] wrote /home/selab/2026/20230088-양근석/Research/CMG/IST/runs/iter11_real_model_triad/generations_deepseek-6.7b.jsonl
+[codellama-7b] bertscore (gold ↔ gen) ...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[codellama-7b] NLI (gold → gen) ...
+[codellama-7b] NLI (diff → gen) ...
+[qwen2.5-coder-7b] bertscore (gold ↔ gen) ...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[qwen2.5-coder-7b] NLI (gold → gen) ...
+[qwen2.5-coder-7b] NLI (diff → gen) ...
+[deepseek-6.7b] bertscore (gold ↔ gen) ...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[deepseek-6.7b] NLI (gold → gen) ...
+[deepseek-6.7b] NLI (diff → gen) ...
+[ref ] NLI (diff → gold) ...
+wrote /home/selab/2026/20230088-양근석/Research/CMG/IST/runs/iter11_real_model_triad/results.csv
+# Iter 11 — Multi-model + diff-grounded NLI
+
+Samples: 80 (reused iter10 selection)
+
+## Gold ↔ Generated: NLI pass-rates at paper's τ = +0.56
+
+| model              | n | signed ≥ +0.56 | signed ≥ +0.88 | mean signed | mean BERTScore |
+|--------------------|---|----------------|----------------|-------------|----------------|
+| codellama-7b       |  80 |   6/80 (7.5%) |   4/80 (5.0%) | +0.038 | +0.860 |
+| qwen2.5-coder-7b   |  80 |   7/80 (8.8%) |   3/80 (3.8%) | +0.054 | +0.864 |
+| deepseek-6.7b      |  80 |   8/80 (10.0%) |   5/80 (6.2%) | -0.038 | +0.847 |
+
+## Diff ↔ X: does the source-of-truth entail each reference or candidate?
+
+| probe                    | n | signed ≥ +0.56 | mean signed | mean entail |
+|--------------------------|---|----------------|-------------|-------------|
+| diff → gold              |  80 | 10/80 (12.5%) | +0.114 | +0.268 |
+| diff → gen (codellama-7b     ) |  80 | 37/80 (46.2%) | +0.520 | +0.549 |
+| diff → gen (qwen2.5-coder-7b ) |  80 | 31/80 (38.8%) | +0.387 | +0.455 |
+| diff → gen (deepseek-6.7b    ) |  80 | 28/80 (35.0%) | +0.386 | +0.464 |
+
+## Interpretation cheatsheet
+
+- If `diff→gold` also fails (signed near 0 or <<0.56): **reference itself is not diff-entailing** → construct-validity critique is empirical. Gold = author *intent*, not diff *content*.
+- If `diff→gold` passes but `diff→gen` fails across all models: **models underfit content**, gold is fine, reference framework salvageable.
+- If `diff→gold` and `diff→gen` both pass: NLI works on both — iter10's failure is a **calibration-shift** issue between paired and free-form regimes.
+
+total elapsed: 123.8s

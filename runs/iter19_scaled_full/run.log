@@ -1,0 +1,50 @@
+  [cpp] picked 379
+  [cs] picked 421
+  [go] picked 339
+  [java] picked 433
+  [js] picked 402
+  [php] picked 276
+  [py] picked 420
+  [rust] picked 342
+selected 3012 samples total
+[codellama-7b] loading codellama/CodeLlama-7b-Instruct-hf ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.96s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.29s/it]
+[codellama-7b]   loaded in 4.1s
+[codellama-7b]   100/3012  [cpp] "Fix invalid notice_message and close connection"
+[codellama-7b]   200/3012  [cpp] Refactor RPCExecutor::request to use JSON spirit library.
+[codellama-7b]   300/3012  [cpp] Improve junction acceleration calculation for better perform
+[codellama-7b]   400/3012  [cs] Refactor ResponseCallback method to use new GetAccessTokenRe
+[codellama-7b]   500/3012  [cs] Fix download decision maker to use correct episode property.
+[codellama-7b]   600/3012  [cs] Update ItemsPresenterTests_Virtualization_Simple.cs to fix b
+[codellama-7b]   700/3012  [cs] Refactor CellTrigger and ProximityTrigger to use HashSets fo
+[codellama-7b]   800/3012  [cs] Update GitModule.cs to include prune and unshallow options.
+[codellama-7b]   900/3012  [go] Update Docker version check to ignore invalid versions.
+[codellama-7b]   1000/3012  [go] Refactor Kubernetes handler to use new variable declarations
+[codellama-7b]   1100/3012  [go] Fix formatting issues in cmd/set.go
+[codellama-7b]   1200/3012  [java] Refactor ObjLoader to use a more efficient method for parsin
+[codellama-7b]   1300/3012  [java] Update RemoteProxy to handle new protocol type for grid.
+[codellama-7b]   1400/3012  [java] Add support for custom Firefox profiles and debug mode.
+[codellama-7b]   1500/3012  [java] "Fix category label positioning in ShiftedCategoryAxis"
+[codellama-7b]   1600/3012  [js] Refactor `toPairs` and `toPairsIn` methods to create a two d
+[codellama-7b]   1700/3012  [js] Update Prism styles to improve readability.
+[codellama-7b]   1800/3012  [js] "Fix missing tenant and app properties in serverless.yml"
+[codellama-7b]   1900/3012  [js] Update context menu position for inline text editors.
+[codellama-7b]   2000/3012  [php] Add tenant connection configuration support.
+[codellama-7b]   2100/3012  [php] Update attendance controller to display error message.
+[codellama-7b]   2200/3012  [php] Add getVoiceChannel method to Member class.
+[codellama-7b]   2300/3012  [py] Update import statements to support multiple modules.
+[codellama-7b]   2400/3012  [py] Update pointer backend to mark messages as read.
+[codellama-7b]   2500/3012  [py] Fix bug in IPython kernel launcher to prevent crash under py
+[codellama-7b]   2600/3012  [py] Update vmware_vm_shell.py to use vm_name as default vm_id_ty
+[codellama-7b]   2700/3012  [rust] Add validation for era start time and node start time.
+[codellama-7b]   2800/3012  [rust] Fix non-scalar support for "C" abi in get_pass_mode.
+[codellama-7b]   2900/3012  [rust] Add base58 and cbor_event parsing for ExtendedAddr.
+[codellama-7b]   3000/3012  [rust] Fix seek behavior for truncated ciphertext.
+[codellama-7b]   3012/3012  [rust] "Fix symmetry mode handling in write_matrix_market_sym"
+[codellama-7b] wrote /home/selab/research/IST/runs/iter19_scaled_full/generations_codellama-7b.jsonl
+[qwen2.5-coder-7b] loading Qwen/Qwen2.5-Coder-7B-Instruct ...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.04s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.02s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:05<00:01,  1.96s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.38s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.61s/it]
+[qwen2.5-coder-7b]   loaded in 8.2s
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[qwen2.5-coder-7b]   100/3012  [cpp] Refactor error logging and add connection closure details.

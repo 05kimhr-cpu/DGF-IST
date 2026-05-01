@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Data (raw corpus — not in repo)
+data/
+
+# Large interim files
+data/interim/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs from background runs (keep run.log but not nohup)
+nohup.out
+
+# VS Code Server binaries
+stable/

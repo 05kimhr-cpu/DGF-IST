@@ -1,0 +1,63 @@
+loaded 1600 iter13 samples
+loading /home/selab/2026/20230088-양근석/Research/LLM_Models/CodeLlama/7B-Instruct ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.37s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.07it/s]
+  loaded in 2.3s
+[prompt=intent] generating ...
+  [intent] 200/1600
+  [intent] 400/1600
+  [intent] 600/1600
+  [intent] 800/1600
+  [intent] 1000/1600
+  [intent] 1200/1600
+  [intent] 1400/1600
+  [intent] 1600/1600
+[prompt=intent] wrote generations
+[prompt=content] generating ...
+  [content] 200/1600
+  [content] 400/1600
+  [content] 600/1600
+  [content] 800/1600
+  [content] 1000/1600
+  [content] 1200/1600
+  [content] 1400/1600
+  [content] 1600/1600
+[prompt=content] wrote generations
+[prompt=baseline] generating ...
+  [baseline] 200/1600
+  [baseline] 400/1600
+  [baseline] 600/1600
+  [baseline] 800/1600
+  [baseline] 1000/1600
+  [baseline] 1200/1600
+  [baseline] 1400/1600
+  [baseline] 1600/1600
+[prompt=baseline] wrote generations
+[intent] gold→gen NLI ...
+[intent] diff→gen NLI ...
+[content] gold→gen NLI ...
+[content] diff→gen NLI ...
+[baseline] gold→gen NLI ...
+[baseline] diff→gen NLI ...
+wrote /home/selab/2026/20230088-양근석/Research/CMG/IST/runs/iter15_prompt_ablation/results.csv
+# Iter 15 — Prompt-sensitivity ablation (CodeLlama-7B, N = 1600)
+
+Threshold τ = +0.56 (paper's BART calibration).
+
+## Gold → Generated
+
+| prompt   | pass ≥ +0.56 (95% CI)     | mean signed |
+|----------|---------------------------|-------------|
+| intent   | 165/1600 (10.3%)  [8.9–11.9] | -0.006 |
+| content  | 34/1600 (2.1%)  [1.5–3.0] | -0.008 |
+| baseline | 156/1600 (9.8%)  [8.4–11.3] | -0.013 |
+
+## Diff → Generated
+
+| prompt   | pass ≥ +0.56 (95% CI)     | mean signed |
+|----------|---------------------------|-------------|
+| intent   | 732/1600 (45.8%)  [43.3–48.2] | +0.466 |
+| content  | 742/1600 (46.4%)  [43.9–48.8] | +0.499 |
+| baseline | 595/1600 (37.2%)  [34.9–39.6] | +0.401 |
+
+total elapsed: 3159.4s

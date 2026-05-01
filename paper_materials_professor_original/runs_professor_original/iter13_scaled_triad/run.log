@@ -1,0 +1,123 @@
+  [cpp] picked 200
+  [cs] picked 200
+  [go] picked 200
+  [java] picked 200
+  [js] picked 200
+  [php] picked 200
+  [py] picked 200
+  [rust] picked 200
+selected 1600 samples (target 1600)
+[codellama-7b] loading /home/selab/2026/20230088-양근석/Research/LLM_Models/CodeLlama/7B-Instruct ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.30s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.13it/s]
+[codellama-7b]   loaded in 2.2s
+[codellama-7b]   100/1600  [cpp] "Fix invalid notice_message and close connection"
+[codellama-7b]   200/1600  [cpp] Refactor RPCExecutor::request to use JSON spirit library.
+[codellama-7b]   300/1600  [cs] Add private class AnyTypeList to System.Linq.Expressions.Lis
+[codellama-7b]   400/1600  [cs] Update browser loading state and title in UI thread.
+[codellama-7b]   500/1600  [go] Update Docker version check to ignore invalid versions.
+[codellama-7b]   600/1600  [go] Refactor Kubernetes handler to use new variable declarations
+[codellama-7b]   700/1600  [java] Refactor LocalChannel.java to use eventLoop.inEventLoop() in
+[codellama-7b]   800/1600  [java] Refactor FastImage to use a Sprite instead of a TextureRegio
+[codellama-7b]   900/1600  [js] Refactor JpegImageClosure to use a switch statement instead 
+[codellama-7b]   1000/1600  [js] Reset keys and stop keyboard event listeners in KeyboardPlug
+[codellama-7b]   1100/1600  [php] Update isComplexQuery method to include 'join' in the list o
+[codellama-7b]   1200/1600  [php] Add isPrimary method to PerNodeTypeResolverInterface.
+[codellama-7b]   1300/1600  [py] Refactor: Move logger initialization to class level.
+[codellama-7b]   1400/1600  [py] "Refactor tokenization utils to improve performance and add 
+[codellama-7b]   1500/1600  [rust] "Refactor: Add finality signatures fetching and update block
+[codellama-7b]   1600/1600  [rust] Fix incorrect behavior in CBOR encoder and decoder.
+[codellama-7b] wrote /home/selab/2026/20230088-양근석/Research/CMG/IST/runs/iter13_scaled_triad/generations_codellama-7b.jsonl
+[qwen2.5-coder-7b] loading /home/selab/2026/20230088-양근석/Research/LLM_Models/Qwen/2.5/7B-Instruct ...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.15s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.14s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.29s/it]
+[qwen2.5-coder-7b]   loaded in 3.8s
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[qwen2.5-coder-7b]   100/1600  [cpp] Add connection name to log messages and improve error handli
+[qwen2.5-coder-7b]   200/1600  [cpp] Fix RPC error handling and improve formatting in RPC console
+[qwen2.5-coder-7b]   300/1600  [cs] Add tests for ListInit with different method types and gener
+[qwen2.5-coder-7b]   400/1600  [cs] Fix browser loading state handling and update is-loading ind
+[qwen2.5-coder-7b]   500/1600  [go] Add check for IgnoreDockerVersion and remove redundant versi
+[qwen2.5-coder-7b]   600/1600  [go] Refactor DNS handler to use switch statement for record type
+[qwen2.5-coder-7b]   700/1600  [java] Fix releaseInboundBuffers to use event loop checks and updat
+[qwen2.5-coder-7b]   800/1600  [java] Refactor FastImage actor to remove unused variable and optim
+[qwen2.5-coder-7b]   900/1600  [js] Fix Huffman decoding logic and improve error handling in JPE
+[qwen2.5-coder-7b]   1000/1600  [js] Update KeyboardPlugin.js to reset keys properly and document
+[qwen2.5-coder-7b]   1100/1600  [php] Add 'join' to complex query detection in QueryDataTable.php
+[qwen2.5-coder-7b]   1200/1600  [php] Add isPrimary method to PerNodeTypeResolverInterface
+[qwen2.5-coder-7b]   1300/1600  [py] Update logger name to class name in JobQueue initialization
+[qwen2.5-coder-7b]   1400/1600  [py] Update tokenization logic and documentation for encode metho
+[qwen2.5-coder-7b]   1500/1600  [rust] Add support for fetching and storing finality signatures dur
+[qwen2.5-coder-7b]   1600/1600  [rust] Reorder and uncomment Text in ObjectKey enum, update related
+[qwen2.5-coder-7b] wrote /home/selab/2026/20230088-양근석/Research/CMG/IST/runs/iter13_scaled_triad/generations_qwen2.5-coder-7b.jsonl
+[deepseek-6.7b] loading /home/selab/2026/20230088-양근석/Research/LLM_Models/DeepSeek/6.7B-Instruct ...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.30s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.26it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.15it/s]
+[deepseek-6.7b]   loaded in 1.8s
+[deepseek-6.7b]   100/1600  [cpp] "Removed duplicate connection"
+[deepseek-6.7b]   200/1600  [cpp] "Implemented JSON error handling in RPCExecutor"
+[deepseek-6.7b]   300/1600  [cs] "Adds new tests for ListInitExpressionTests"
+[deepseek-6.7b]   400/1600  [cs] "Update browser navigation controls based on loading state"
+[deepseek-6.7b]   500/1600  [go] "Refactored Docker version check logic"
+[deepseek-6.7b]   600/1600  [go] "Refactored Kubernetes handler for readability and clarity"
+[deepseek-6.7b]   700/1600  [java] "Implemented assertions and added variables in LocalChannel.
+[deepseek-6.7b]   800/1600  [java] "Adds missing variables and methods to FastImage class"
+[deepseek-6.7b]   900/1600  [js] "Fixes huffman sequence error in JpegImage"
+[deepseek-6.7b]   1000/1600  [js] "Reset and shutdown KeyboardPlugin"
+[deepseek-6.7b]   1100/1600  [php] "Update QueryDataTable.php: Add 'join' to SQL checks"
+[deepseek-6.7b]   1200/1600  [php] "Adds isPrimary method to PerNodeTypeResolverInterface"
+[deepseek-6.7b]   1300/1600  [py] "Update JobQueue class logger initialization"
+[deepseek-6.7b]   1400/1600  [py] "Update num_added_tokens method"
+[deepseek-6.7b]   1500/1600  [rust] "Adds num::rational::Ratio use and modifies operations.rs"
+[deepseek-6.7b]   1600/1600  [rust] "Update CBOR spec for integer and bytes keys"
+[deepseek-6.7b] wrote /home/selab/2026/20230088-양근석/Research/CMG/IST/runs/iter13_scaled_triad/generations_deepseek-6.7b.jsonl
+[codellama-7b] bertscore ...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[codellama-7b] NLI gold→gen ...
+[codellama-7b] NLI diff→gen ...
+[qwen2.5-coder-7b] bertscore ...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[qwen2.5-coder-7b] NLI gold→gen ...
+[qwen2.5-coder-7b] NLI diff→gen ...
+[deepseek-6.7b] bertscore ...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[deepseek-6.7b] NLI gold→gen ...
+[deepseek-6.7b] NLI diff→gen ...
+[ref ] NLI diff→gold ...
+wrote /home/selab/2026/20230088-양근석/Research/CMG/IST/runs/iter13_scaled_triad/results.csv
+# Iter 13 — Scaled triad + diff-grounded NLI
+
+Samples: 1600 (target 200 × 8 = 1600)
+
+## Gold ↔ Generated: NLI pass-rate (τ = +0.56)
+
+| model              |   n | pass ≥ +0.56 (95% CI)          | mean signed | mean BERTScore |
+|--------------------|-----|--------------------------------|-------------|----------------|
+| codellama-7b       | 1600 | 156/1600 (9.8%)  [8.4–11.3] | -0.013 | +0.860 |
+| qwen2.5-coder-7b   | 1600 | 113/1600 (7.1%)  [5.9–8.4] | +0.003 | +0.862 |
+| deepseek-6.7b      | 1600 | 156/1600 (9.8%)  [8.4–11.3] | -0.070 | +0.848 |
+
+## Diff ↔ X : source-of-truth entailment
+
+| probe                      |   n | pass ≥ +0.56 (95% CI)          | mean signed | mean entail |
+|----------------------------|-----|--------------------------------|-------------|-------------|
+| diff → gold                | 1600 | 301/1600 (18.8%)  [17.0–20.8] | +0.107 | +0.283 |
+| diff → gen (codellama-7b     ) | 1600 | 595/1600 (37.2%)  [34.9–39.6] | +0.401 | +0.460 |
+| diff → gen (qwen2.5-coder-7b ) | 1600 | 612/1600 (38.2%)  [35.9–40.7] | +0.406 | +0.468 |
+| diff → gen (deepseek-6.7b    ) | 1600 | 539/1600 (33.7%)  [31.4–36.0] | +0.361 | +0.441 |
+
+## Per-language diff→gold pass-rates (τ = +0.56)
+
+| lang |  n  | pass (95% CI)            | mean signed |
+|------|-----|--------------------------|-------------|
+| cpp  | 200 | 42/200 (21.0%)  [15.9–27.2] | +0.098 |
+| cs   | 200 | 30/200 (15.0%)  [10.7–20.6] | +0.118 |
+| go   | 200 | 32/200 (16.0%)  [11.6–21.7] | +0.113 |
+| java | 200 | 35/200 (17.5%)  [12.9–23.4] | +0.045 |
+| js   | 200 | 47/200 (23.5%)  [18.2–29.8] | +0.163 |
+| php  | 200 | 23/200 (11.5%)  [7.8–16.7] | +0.062 |
+| py   | 200 | 51/200 (25.5%)  [20.0–32.0] | +0.152 |
+| rust | 200 | 41/200 (20.5%)  [15.5–26.6] | +0.106 |
+
+total elapsed: 2842.6s

@@ -1,0 +1,73 @@
+sample_id,kind,gold,candidate_A,candidate_B,rater_judgment,rater_notes
+S01,verb,"Open to correct line on Webstorm , IntelliJ and AppCode","Unlock to correct line on Webstorm , IntelliJ and AppCode","Close to correct line on Webstorm , IntelliJ and AppCode",A,"unlock preserves 'open/access' direction; close is antonym"
+S02,verb,Re - enable modules pruning for fake compile actions . I think our initial,Re - disable modules pruning for fake compile actions . I think our initial,Re - permit modules pruning for fake compile actions . I think our initial,B,"permit ≈ enable; disable is antonym"
+S03,verb,Temp disabling reactor - netty to unblock pipeline,Temp enabling reactor - netty to unblock pipeline,Temp blocking reactor - netty to unblock pipeline,B,"blocking ≈ disabling; enabling is antonym"
+S04,verb,Added ` created_at ` field to accepted fields for members CSV import,Added ` created_at ` field to took fields for members CSV import,Added ` created_at ` field to rejected fields for members CSV import,A,"'took fields' is grammatically awkward but preserves accept-direction; rejected is clear antonym"
+S05,verb,"Jellyfin API Update
+Also includes trailing slash fix from","Jellyfin API Update
+Also excludes trailing slash fix from","Jellyfin API Update
+Also contains trailing slash fix from",B,"contains ≈ includes; excludes is antonym"
+S06,verb,Dropped any notion of allowing the user to specify the build directories :,Dropped any notion of permitting the user to specify the build directories :,Dropped any notion of forbidding the user to specify the build directories :,A,"permitting ≈ allowing; forbidding is antonym"
+S07,verb,"Using getenv to find the home folder on non posix compatible systems.
+Removed the option to used a configuration variable to set the persistent storage location.","Using getenv to find the home folder on non posix compatible systems.
+Inserted the option to used a configuration variable to set the persistent storage location.","Using getenv to find the home folder on non posix compatible systems.
+Deleted the option to used a configuration variable to set the persistent storage location.",B,"deleted ≈ removed; inserted is antonym"
+S08,verb,"Adding cAdvisor CPU CFS quota metrics
+This should make it possible to better monitor container CPU usage vs. the
+allocated limits.  The exisitng container_spec_cpu_shares metric only shows
+requested amounts and not enforced limits.","Adding cAdvisor CPU CFS quota metrics
+This should make it possible to better monitor container CPU usage vs. the
+allocated limits.  The exisitng container_spec_cpu_shares metric only displays
+requested amounts and not enforced limits.","Adding cAdvisor CPU CFS quota metrics
+This should make it possible to better monitor container CPU usage vs. the
+allocated limits.  The exisitng container_spec_cpu_shares metric only hides
+requested amounts and not enforced limits.",A,"displays ≈ shows; hides is antonym"
+S09,verb,"Don't create resource directories if not querying for resources
+Ordering issue in the logic caused the paths to be created even
+if the queries were noops. This adds an empty-check before
+creating the directories at all.
+Related to","Don't build resource directories if not querying for resources
+Ordering issue in the logic caused the paths to be created even
+if the queries were noops. This adds an empty-check before
+creating the directories at all.
+Related to","Don't destroy resource directories if not querying for resources
+Ordering issue in the logic caused the paths to be created even
+if the queries were noops. This adds an empty-check before
+creating the directories at all.
+Related to",A,"build ≈ create; destroy is antonym"
+S10,verb,"Major improvements to terminal - style tab completion . Still work to be done , but a decent start .","Major improvements to terminal - style tab completion . Still work to be done , but a decent begin .","Major improvements to terminal - style tab completion . Still work to be done , but a decent stop .",A,"'decent begin' is awkward noun use but preserves start-direction; stop is antonym"
+S11,noun_close_entity,Escape scope parameter to reduce pontential XSS vector,Escape scope constant to reduce pontential XSS vector,Escape scope argument to reduce pontential XSS vector,B,"argument ≈ parameter in programming; constant is disjoint"
+S12,noun_close_entity,Simplify calls for the sufficiency check functions,Simplify calls for the sufficiency check methods,Simplify calls for the sufficiency check variables,A,"methods ≈ functions; variables are a different entity kind"
+S13,noun_close_entity,refs Fixed using filters with parameters,refs Fixed using filters with constants,refs Fixed using filters with arguments,B,"arguments ≈ parameters; constants is disjoint"
+S14,noun_close_entity,Update BazelStrategyModule to use registry methods instead of executorInit where possible .,Update BazelStrategyModule to use registry functions instead of executorInit where possible .,Update BazelStrategyModule to use registry attributes instead of executorInit where possible .,A,"functions ≈ methods; attributes is different entity"
+S15,noun_close_entity,analytics : Fix - - utc argument in update_analytics_counts . py .,analytics : Fix - - utc parameter in update_analytics_counts . py .,analytics : Fix - - utc keyword in update_analytics_counts . py .,A,"parameter ≈ argument for CLI flags; keyword has distinct meaning in Python"
+S16,noun_diagnostic,fixed compile warnings and removed extra whitespaces,fixed compile alerts and removed extra whitespaces,fixed compile errors and removed extra whitespaces,A,"alerts preserves the 'non-fatal notification' reading; errors flips severity to fatal"
+S17,noun_diagnostic,"Checking in Brett Cannon ' s patch , which fixes bug .","Checking in Brett Cannon ' s patch , which fixes issue .","Checking in Brett Cannon ' s patch , which fixes feature .",A,"issue ≈ bug; 'fixes feature' is semantically wrong"
+S18,noun_diagnostic,add a backtrace to the error! log when a responder fails to respond,add a backtrace to the warning! log when a responder fails to respond,add a backtrace to the exception! log when a responder fails to respond,B,"exception ≈ error in programming; warning is weaker severity"
+S19,noun_diagnostic,TST : Add tests for bugs fixed in gh - 17068 .,TST : Add tests for features fixed in gh - 17068 .,TST : Add tests for issues fixed in gh - 17068 .,B,"issues ≈ bugs; 'tests for features fixed' flips the target category"
+S20,noun_diagnostic,[Translator] Add resource path to exception message for schema validation errors,[Translator] Add resource path to exception message for schema validation warnings,[Translator] Add resource path to exception message for schema validation exceptions,B,"validation exceptions ≈ validation errors; warnings weaker"
+S21,noun_directional,Improve node error messges when nodes are inserted with non - alive inputs or successors .,Improve node error messges when nodes are inserted with non - alive entries or successors .,Improve node error messges when nodes are inserted with non - alive outputs or successors .,A,"entries ≈ inputs for node data flow; outputs is directional opposite"
+S22,noun_directional,hipchat : Fix handling of user IDs in Stride import .,hipchat : Fix handling of user IDs in Stride export .,hipchat : Fix handling of user IDs in Stride include .,B,"include ≈ import direction; export is antonym"
+S23,noun_directional,SimonStewart : Clean up imports . No logical changes here either .,SimonStewart : Clean up exports . No logical changes here either .,SimonStewart : Clean up includes . No logical changes here either .,B,"includes ≈ imports; exports is directional flip"
+S24,noun_directional,Allow lazy resolving of the constant input value of the node injecting probabilities into if nodes .,Allow lazy resolving of the constant output value of the node injecting probabilities into if nodes .,Allow lazy resolving of the constant entry value of the node injecting probabilities into if nodes .,B,"entry ≈ input; output is directional opposite"
+S25,noun_directional,initialize funciton for random inputs,initialize funciton for random entries,initialize funciton for random outputs,A,"entries ≈ inputs in random-data context; outputs flips direction"
+S26,noun_infrastructure,"controller: Log when a node has been updated
+The MCC logs show when we tell a node to start, but don't show us
+when it's done.  This helps the MCC logs be a centralized
+aggregate of events.
+Doing this now to aid debugging slowness in updates in our `e2e-aws-op`
+test suite.","controller: Log when a node has been updated
+The MCC outputs show when we tell a node to start, but don't show us
+when it's done.  This helps the MCC outputs be a centralized
+aggregate of events.
+Doing this now to aid debugging slowness in updates in our `e2e-aws-op`
+test suite.","controller: Log when a node has been updated
+The MCC traces show when we tell a node to start, but don't show us
+when it's done.  This helps the MCC traces be a centralized
+aggregate of events.
+Doing this now to aid debugging slowness in updates in our `e2e-aws-op`
+test suite.",B,"traces ≈ logs in debugging context; outputs shifts the concept"
+S27,noun_infrastructure,Improve robustness of a couple integration tests with occasional failures,Improve robustness of a couple integration configs with occasional failures,Improve robustness of a couple integration checks with occasional failures,B,"checks ≈ tests; configs is a different artefact class"
+S28,noun_infrastructure,Move ScrollView prop comments from propTypes to flow types,Move ScrollView prop commands from propTypes to flow types,Move ScrollView prop notes from propTypes to flow types,B,"notes ≈ comments for documentation strings; commands is a separate concept"
+S29,noun_infrastructure,Log only duplicated deploys if invalid block found.,Output only duplicated deploys if invalid block found.,Trace only duplicated deploys if invalid block found.,B,"trace ≈ log as verb; output changes the action semantics"
+S30,noun_infrastructure,IJavascriptObjectRepository . Register - Improve isAsync xml doco comment,IJavascriptObjectRepository . Register - Improve isAsync xml doco command,IJavascriptObjectRepository . Register - Improve isAsync xml doco note,B,"doco note ≈ doco comment; command is a different artefact"

@@ -48,3 +48,123 @@ selected 3012 samples total
 [qwen2.5-coder-7b]   loaded in 8.2s
 The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
 [qwen2.5-coder-7b]   100/3012  [cpp] Refactor error logging and add connection closure details.
+[qwen2.5-coder-7b]   200/3012  [cpp] Refactor RPCExecutor::request to improve error handling
+[qwen2.5-coder-7b]   300/3012  [cpp] Refactor fast acos approximation in planner.cpp
+[qwen2.5-coder-7b]   400/3012  [cs] Refactor response callback to handle exceptions gracefully
+[qwen2.5-coder-7b]   500/3012  [cs] Refactor download allowed logic in DownloadDecisionMaker.cs
+[qwen2.5-coder-7b]   600/3012  [cs] Refactor and add tests for removing items from ItemsPresente
+[qwen2.5-coder-7b]   700/3012  [cs] Refactor CellTrigger and ProximityTrigger to use HashSet for
+[qwen2.5-coder-7b]   800/3012  [cs] Add prune argument to fetch command
+[qwen2.5-coder-7b]   900/3012  [go] Ignore Docker version check if specified
+[qwen2.5-coder-7b]   1000/3012  [go] Refactor DNS handling to use middleware functions
+[qwen2.5-coder-7b]   1100/3012  [go] Refactor: Remove redundant inline updates and replaces logic
+[qwen2.5-coder-7b]   1200/3012  [java] Refactor ObjLoader to handle multiple face vertices efficien
+[qwen2.5-coder-7b]   1300/3012  [java] Add InvocationTargetException handling in RemoteProxy
+[qwen2.5-coder-7b]   1400/3012  [java] Refactor FirefoxProfile creation and add custom preferences 
+[qwen2.5-coder-7b]   1500/3012  [java] Refactor method calls to use getter methods for better encap
+[qwen2.5-coder-7b]   1600/3012  [js] Refactor tests for `toPairs` and `toPairsIn` methods
+[qwen2.5-coder-7b]   1700/3012  [js] Update line highlight color in prism-styles.js
+[qwen2.5-coder-7b]   1800/3012  [js] Refactor warning and error handling for missing tenant and a
+[qwen2.5-coder-7b]   1900/3012  [js] Refactor code block for better readability and maintainabili
+[qwen2.5-coder-7b]   2000/3012  [php] Add method to use custom config file in Configuring driver
+[qwen2.5-coder-7b]   2100/3012  [php] Refactor error handling in AttendanceController
+[qwen2.5-coder-7b]   2200/3012  [php] Add method to retrieve member's voice channel
+[qwen2.5-coder-7b]   2300/3012  [py] Fix autoreload syntax error
+[qwen2.5-coder-7b]   2400/3012  [py] Refactor `update_pointer_backend` to include pointer update 
+[qwen2.5-coder-7b]   2500/3012  [py] Refactor kernel creation to redirect output and install disp
+[qwen2.5-coder-7b]   2600/3012  [py] Update vmware_vm_shell.py to use vm_name as default vm_id_ty
+[qwen2.5-coder-7b]   2700/3012  [rust] Add validation checks for era supervisor
+[qwen2.5-coder-7b]   2800/3012  [rust] Update error message to include type and return status
+[qwen2.5-coder-7b]   2900/3012  [rust] Add error handling and FromStr implementation for ExtendedAd
+[qwen2.5-coder-7b]   3000/3012  [rust] Add test for seek_from_end on truncated ciphertext
+[qwen2.5-coder-7b]   3012/3012  [rust] Refactor `write_matrix_market_sym` to support different symm
+[qwen2.5-coder-7b] wrote /home/selab/research/IST/runs/iter19_scaled_full/generations_qwen2.5-coder-7b.jsonl
+[deepseek-6.7b] loading deepseek-ai/deepseek-coder-6.7b-instruct ...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.62s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.93s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.48s/it]
+[deepseek-6.7b]   loaded in 12.7s
+[deepseek-6.7b]   100/3012  [cpp] "Removed duplicate connection"
+[deepseek-6.7b]   200/3012  [cpp] "Implemented JSON error handling in RPCExecutor"
+[deepseek-6.7b]   300/3012  [cpp] "Implemented fast acos approximation for junction angle calc
+[deepseek-6.7b]   400/3012  [cs] "Refactored token refresh logic with error handling"
+[deepseek-6.7b]   500/3012  [cs] "Update DownloadDecisionMaker.cs: Adjust download allowed lo
+[deepseek-6.7b]   600/3012  [cs] "Refactored test method names for clarity"
+[deepseek-6.7b]   700/3012  [cs] "Refactored ActorMap and CellTrigger classes"
+[deepseek-6.7b]   800/3012  [cs] "Implemented Git fetch and rebase arguments"
+[deepseek-6.7b]   900/3012  [go] "Refactored Docker version check logic"
+[deepseek-6.7b]   1000/3012  [go] "Refactored Kubernetes handler for readability and clarity"
+[deepseek-6.7b]   1100/3012  [go] "Refactored set command handling"
+[deepseek-6.7b]   1200/3012  [java] "Refactored ObjLoader.java to improve code readability"
+[deepseek-6.7b]   1300/3012  [java] "Update RemoteProxy constructor and getProtocol method"
+[deepseek-6.7b]   1400/3012  [java] "Add imports and modify FirefoxProfile creation"
+[deepseek-6.7b]   1500/3012  [java] "Refactored category label drawing logic"
+[deepseek-6.7b]   1600/3012  [js] "Implemented toPairs methods in QUnit tests"
+[deepseek-6.7b]   1700/3012  [js] "Update lineHighlight color in prism styles"
+[deepseek-6.7b]   1800/3012  [js] "Fixed missing properties in Serverless.js"
+[deepseek-6.7b]   1900/3012  [js] "Implemented context menu for code editor"
+[deepseek-6.7b]   2000/3012  [php] "Adds tenant connection configuration setup method"
+[deepseek-6.7b]   2100/3012  [php] "Updated attendance controller for empty course and events"
+[deepseek-6.7b]   2200/3012  [php] "Add voice channel retrieval method to Member class"
+[deepseek-6.7b]   2300/3012  [py] "Implemented autoreload functionality for multiple modules"
+[deepseek-6.7b]   2400/3012  [py] "Update pointer backend and mark messages as read"
+[deepseek-6.7b]   2500/3012  [py] "Implemented kernel creation with stdout/stderr redirection 
+[deepseek-6.7b]   2600/3012  [py] "Update vm_id_type choices and default value in vmware_vm_sh
+[deepseek-6.7b]   2700/3012  [rust] "Implemented validator start time checks in era supervisor"
+[deepseek-6.7b]   2800/3012  [rust] "Implemented support for non-scalars in C abi"
+[deepseek-6.7b]   2900/3012  [rust] "Add error types and from_str method for ExtendedAddr"
+[deepseek-6.7b]   3000/3012  [rust] "Implemented stream seek from end test case"
+[deepseek-6.7b]   3012/3012  [rust] "Add symmetry mode to write_matrix_market_sym"
+[deepseek-6.7b] wrote /home/selab/research/IST/runs/iter19_scaled_full/generations_deepseek-6.7b.jsonl
+[codellama-7b] bertscore ...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[codellama-7b] NLI gold→gen ...
+[codellama-7b] NLI diff→gen ...
+[qwen2.5-coder-7b] bertscore ...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[qwen2.5-coder-7b] NLI gold→gen ...
+[qwen2.5-coder-7b] NLI diff→gen ...
+[deepseek-6.7b] bertscore ...
+Some weights of RobertaModel were not initialized from the model checkpoint at roberta-large and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[deepseek-6.7b] NLI gold→gen ...
+[deepseek-6.7b] NLI diff→gen ...
+[ref ] NLI diff→gold ...
+wrote /home/selab/research/IST/runs/iter19_scaled_full/results.csv
+# Iter 19 — Full-sample triad + diff-grounded NLI
+
+Samples: 3012 (all passing filter; iter13 used 200/lang = 1600)
+
+Per-language counts: cpp=379  cs=421  go=339  java=433  js=402  php=276  py=420  rust=342
+
+## Gold ↔ Generated: NLI pass-rate (τ = +0.56)
+
+| model              |   n | pass ≥ +0.56 (95% CI)          | mean signed | mean BERTScore |
+|--------------------|-----|--------------------------------|-------------|----------------|
+| codellama-7b       | 3012 | 268/3012 (8.9%)  [7.9–10.0] | -0.023 | +0.865 |
+| qwen2.5-coder-7b   | 3012 | 290/3012 (9.6%)  [8.6–10.7] | +0.052 | +0.866 |
+| deepseek-6.7b      | 3012 | 310/3012 (10.3%)  [9.3–11.4] | -0.068 | +0.857 |
+
+## Diff ↔ X : source-of-truth entailment
+
+| probe                      |   n | pass ≥ +0.56 (95% CI)          | mean signed | mean entail |
+|----------------------------|-----|--------------------------------|-------------|-------------|
+| diff → gold                | 3012 | 595/3012 (19.8%)  [18.4–21.2] | +0.122 | +0.294 |
+| diff → gen (codellama-7b     ) | 3012 | 1131/3012 (37.5%)  [35.8–39.3] | +0.406 | +0.466 |
+| diff → gen (qwen2.5-coder-7b ) | 3012 | 828/3012 (27.5%)  [25.9–29.1] | +0.346 | +0.398 |
+| diff → gen (deepseek-6.7b    ) | 3012 | 1078/3012 (35.8%)  [34.1–37.5] | +0.374 | +0.456 |
+
+## Per-language diff→gold pass-rates (τ = +0.56)
+
+| lang |  n  | pass (95% CI)            | mean signed |
+|------|-----|--------------------------|-------------|
+| cpp  | 379 | 82/379 (21.6%)  [17.8–26.1] | +0.134 |
+| cs   | 421 | 80/421 (19.0%)  [15.5–23.0] | +0.124 |
+| go   | 339 | 45/339 (13.3%)  [10.1–17.3] | +0.077 |
+| java | 433 | 66/433 (15.2%)  [12.2–18.9] | +0.050 |
+| js   | 402 | 108/402 (26.9%)  [22.8–31.4] | +0.199 |
+| php  | 276 | 35/276 (12.7%)  [9.3–17.1] | +0.078 |
+| py   | 420 | 106/420 (25.2%)  [21.3–29.6] | +0.168 |
+| rust | 342 | 73/342 (21.3%)  [17.3–26.0] | +0.132 |
+
+total elapsed: 4580.7s
